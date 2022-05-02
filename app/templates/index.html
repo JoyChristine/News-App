@@ -1,0 +1,134 @@
+
+
+{% extends 'base.html'%} {% block content %} {% block styles%} {{ super() }}
+<!-- <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" /> -->
+{% endblock %}
+
+<style>
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+
+  h1{
+    color: #38520d;
+    /* text-align: center;
+    font-size: 3vw;
+    margin-top: 2vw; */
+    font-family: 'Poppins', sans-serif;
+  }
+  h4,h6,p,h2{
+    color: #fff;
+  }
+  p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size:1.3vw;
+  }
+  h3{
+    color: #4e7309;
+    font-family: futura-pt;
+    font-size: 1.9vw;
+  }
+
+  h5{
+    font-family: 'Proza Libre', sans-serif;
+    color: #fff;
+    font-family: 1.4vw;
+    text-decoration: underline;
+  }
+  .list-group-item{
+    background-color: #151515;
+    border: none;
+    color: #fff;
+    list-style-type: circle;
+   
+
+    
+  }
+  .list-group-item:hover{
+    text-decoration: underline;
+    text-decoration-color: #38520d;
+    background-color: #38520d;
+    color: #fff;
+  }
+  #card{
+    border-left: 1px solid #fff;
+    
+
+  }
+  .card-header h2{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    font-family: 'Architects Daughter', cursive;
+  }
+  .col-md-3,.col-md-9{
+   padding-top: 3vw;
+
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #img{
+    height: 25vw;
+  }
+</style>
+<body>
+  <div class="container-fluid">
+    <div class="row overflow-x-hidden">
+
+      <div class="col-md-12">
+        
+      </div>
+      <div class="col-md-9">
+        <h3 class="text-center">TOP NEWS TODAY</h3>
+        <div class="row">
+          {% for headline in topHeadlines %}
+          <div class="col-md-6" >
+            <div class="card" id="card-headline">
+              <h5 class="card-title">{{headline.source}}</h5>
+             
+              <img src="{{headline.image}}" class="card-img-top img-thumbnail" id="img" />
+                
+              <div class="card-body">
+                <h5 class="card-title">{{headline.title}}</h5>
+                <p class="card-text">{{headline.description}}</p>
+              </div>
+              <div class="card-body">
+                <a href="{{headline.url}}" class="card-link">Read more ...</a>
+              </div>
+              <div class="card-footer text-muted">
+                
+                <!-- <h4>By: {{headline.author}}</h4> -->
+                <h6>{{headline.publishedDate}} &nbsp;&nbsp; By: {{headline.author}}</h6>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header">
+            <h2>Browse News Sources</h2>
+          </div>
+          <div class="card-body" id="card">
+            <ul class="list-group list-group-flush">
+              {% for source in sources %}
+              <a href="{{source.url}}" target="_blank">
+                <li class="list-group-item">{{source.name}}</li>
+              </a>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+{% endblock %}

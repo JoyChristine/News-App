@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='styles/styles.css')}}" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'styles/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+      *{
+        background-color: #151515;
+        cursor:pointer;
+      }
+
+      .navbar {
+        background-color: #151515;
+      }
+      #nav-list li a:hover{
+        background-color: #151515;
+        text-decoration: underline;
+
+      }
+      #nav-list li a{
+        color: #fff;
+        font-size: 1.3vw;
+        align-items: center;
+        font-family: futura;
+        
+      }
+      .navbar-collapse{
+        margin-top:2vw;
+        padding-right: 22vw;
+      }
+      
+      #btn{
+        background-color: #142e0a;
+        color: #fff;
+      }
+      #form{
+        margin-left: 5vw;
+      }
+      form input[type=text]{
+       
+        border: none;
+        background-color: #fff;
+      }
+    
+      .navbar-brand {
+        color: #38520d;
+      }
+      .navbar-header .navbar-toggle{
+        background-color: white;
+        
+        color: #fff;
+      }
+      .container-fluid{
+        border-bottom: 1px solid #374d0e;
+      }
+    
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1>WORLD NEWS</h1>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav " id="nav-list" >
+              <!-- <i class="fa fa-search"></i> -->
+             <li><a href="/">Home</a></li>
+              <li><a href="/{{'categories/Business'}}" >Business</a> </li>
+              <li><a href="/{{'categories/Health'}}" >Health</a></li>
+              <li><a href="/{{'categories/Technology'}}">Technology</a></li>
+              <li><a href="/{{'categories/Science'}}">Science</a></li>
+              <li><a href="/{{'categories/Sports'}}">Sports</a></li>
+              <li><a href="/{{'categories/Entertainment'}}">Entertainment</a></li>
+            </ul>
+            <form class="form-inline" id="form" >
+              <input type="text" class="form-control input-form" name="search_query" required id="" placeholder="Search for an article.">
+              <button type="submit" class="btn search-btn" id="btn">Search</button>
+             </form>
+
+          </div>
+            <!-- <form id="form">
+              <input
+                id="search"
+                class="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+                name="search_query"
+              />
+              <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"
+                style="font-size: 18px;">
+            </i></button>
+            </form> -->
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
