@@ -31,27 +31,33 @@
         color: #fff;
         font-size: 1.3vw;
         align-items: center;
+        
         font-family: futura;
         
       }
       .navbar-collapse{
+        border-top: 1px solid #374d0e;
+        border-bottom: 1px solid #374d0e;
+        
+      }
+      .navbar-collapse{
         margin-top:2vw;
-        padding-right: 22vw;
+        align-items: center;
+       
+       
       }
       
       #btn{
         background-color: #142e0a;
         color: #fff;
       }
-      #form{
-        margin-left: 5vw;
-      }
+      
       form input[type=text]{
        
         border: none;
         background-color: #fff;
       }
-    
+     
       .navbar-brand {
         color: #38520d;
       }
@@ -60,10 +66,7 @@
         
         color: #fff;
       }
-      .container-fluid{
-        border-bottom: 1px solid #374d0e;
-      }
-    
+      
 
 
     </style>
@@ -71,7 +74,7 @@
 <body>
     
         <div class="container-fluid">
-          
+          <h1 class="text-center">WORLD NEWS</h1>
           <div class="navbar-header">
             <button
               type="button"
@@ -84,12 +87,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <h1>WORLD NEWS</h1>
+            
           </div>
-          <div class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" style="margin-left: 5vw;">
             <ul class="nav navbar-nav " id="nav-list" >
              
-             <li><a href="/">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="/{{'categories/Business'}}" >Business</a> </li>
               <li><a href="/{{'categories/Health'}}" >Health</a></li>
               <li><a href="/{{'categories/Technology'}}">Technology</a></li>
@@ -97,8 +100,9 @@
               <li><a href="/{{'categories/Sports'}}">Sports</a></li>
               <li><a href="/{{'categories/Entertainment'}}">Entertainment</a></li>
             </ul>
-            <form class="form-inline" id="form" >
-              <input type="text" class="form-control input-form" name="search_query" required id="" placeholder="Search for an article.">
+            <form class="form-inline" id="form" style="margin-top:0.5vw;margin-left: 58%;" >
+              <input type="text" class="form-control input-form" name="search_query"
+               required id="" placeholder="Search for an article." width="100">
               <button type="submit" class="btn search-btn" id="btn">Search</button>
              </form>
 
