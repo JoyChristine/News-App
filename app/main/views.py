@@ -19,13 +19,6 @@ def index():
   else:
     return render_template('index.html', sources = newsSource, topHeadlines=topHeadlines)
 
-@main.route('/article/<id>')
-def news_article(id):
-  '''
-  news view page function that returns the movie details page and its data
-  '''
-  articles = news_article_source(id)
-  return render_template('articles.html',articles =articles, id = id)
 
 @main.route('/categories/<category_name>')
 def cat(category_name):
