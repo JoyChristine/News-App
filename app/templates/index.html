@@ -8,7 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
 
-
+*{
+        background-color: #040507;
+        cursor:pointer;
+      }
   h1{
     color: #38520d;
     /* text-align: center;
@@ -23,11 +26,17 @@
     color:#B2BEB5
   }
   p{
-    font-family: 'IBM Plex Sans', sans-serif;
+
+    font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    color: rgb(155, 152, 152);
+/* 
+    font-family: 'IBM Plex Sans', sans-serif; */
     font-size:1.3vw;
   }
   h3{
-    color: #4e7309;
+    color: #FFFFFF;
+    /* color: #4e7309; */
     font-family: futura-pt;
     font-size: 1.9vw;
   }
@@ -35,11 +44,14 @@
   h5{
     font-family: 'Proza Libre', sans-serif;
     color: #fff;
-    font-family: 1.4vw;
+    font-size: 1.5vw;
+    font-weight: bold; 
+  }
+  h5:hover{
     text-decoration: underline;
   }
   .list-group-item{
-    background-color: #151515;
+    background-color: #040507;
     border: none;
     color: #fff;
     list-style-type: circle;
@@ -49,8 +61,8 @@
   }
   .list-group-item:hover{
     text-decoration: underline;
-    text-decoration-color: #38520d;
-    background-color: #38520d;
+    text-decoration-color: #263809;
+    background-color: #263809;
     color: #fff;
   }
   #card{
@@ -63,6 +75,7 @@
     text-decoration: underline;
     font-family: 'Architects Daughter', cursive;
   }
+
   .col-md-3,.col-md-9{
    padding-top: 3vw;
 
@@ -89,11 +102,12 @@
           {% for headline in topHeadlines %}
           <div class="col-md-6" >
             <div class="card" id="card-headline">
-              <h5 class="card-title">{{headline.source}}</h5>
+              
              
               <img src="{{headline.image}}" class="card-img-top " id="img" />
                 
               <div class="card-body">
+                
                 <h5 class="card-title">{{headline.title}}</h5>
                 <p class="card-text">{{headline.description}}</p>
               </div>
