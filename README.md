@@ -1,9 +1,7 @@
-# News-App
-A news app that uses the NewsApi to collect news around various sources
 
 ## Description
 
-News Highlights is a web application that will help users list and preview news articles from various sources.
+News App is a web application that will help users list and preview news articles from various sources.
 It is a web application that is meant to catch up hard workers on current affairs happening all over the world.
 
 ## Features
