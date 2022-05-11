@@ -1,19 +1,19 @@
 
 ## Description
 
-News App is a web application that will help users list and preview news articles from various sources.
-It is a web application that is meant to catch up hard workers on current affairs happening all over the world.
+Pitch is a web application that will help users list and preview pitches in different categories.
+
 
 ## Features
 A user can;
--See the pitches other people have posted.
--Vote on the pitch they liked and give it a downvote or upvote.
--Sign in & leave a comment
--Receive a welcoming email once I sign up.
--View the pitches I have created in my profile page.
--Comment on the different pitches and leave feedback.
--Submit a pitch in any category.
--View the different categories.
+*  See the pitches other people have posted.
+* Vote on the pitch they liked and give it a downvote or upvote.
+* Sign in & leave a comment
+* Receive a welcoming email once I sign up.
+* View the pitches I have created in my profile page.
+* Comment on the different pitches and leave feedback.
+* Submit a pitch in any category.
+* View the different categories.
 
 
 <!-- # Behavior Driven Development
