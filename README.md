@@ -31,7 +31,7 @@ View the complete site [here](https://newsapp-joy.herokuapp.com/)
     
 ## Set-up and Installation
 Type the following command in your terminal to clone this repository
-git clone https://github.com/thesmartcoder7/newsportal.git
+git clone https://github.com/JoyChristine/News-App.git
 
 # 
 ## Contributors
