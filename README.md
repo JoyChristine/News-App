@@ -4,19 +4,14 @@
 Pitch is a web application that will help users list and preview pitches in different categories.
 
 
-## Features
-A user can;
-*  See the pitches other people have posted.
-* Vote on the pitch they liked and give it a downvote or upvote.
-* Sign in & leave a comment
-* Receive a welcoming email once I sign up.
-* View the pitches I have created in my profile page.
-* Comment on the different pitches and leave feedback.
-* Submit a pitch in any category.
-* View the different categories.
 
+## User Stories
+* Users should see various news sources on the homepage of the application.
+* Users should see news sources and see all news articles from the selected news source in the application.
+* Users should see  the image, description and the time a news article was created.
+* Users should  click on an article and read the full article on the source website.
 
-<!-- # Behavior Driven Development
+ # Behavior Driven Development
 | Behavior            | Input                         | Output                        |
 | ------------------- | ----------------------------- | ----------------------------- |
 | View All News Sources | Default Home Page(right)| Displays all news sources |
@@ -25,7 +20,7 @@ A user can;
 | Search for an article by keyword | Type any keyword in `search bar` e.g. `Kenya`| Redirects to search page with all the search results for Kenya|
 
 ## View Live Site here
-View the complete site [here](https://newsapp-joy.herokuapp.com/) -->
+View the complete site [here](https://newsapp-joy.herokuapp.com/)
 
 
 ## Technologies Used
@@ -35,30 +30,13 @@ View the complete site [here](https://newsapp-joy.herokuapp.com/) -->
     
     
 ## Set-up and Installation
-Prepare the environment variables.
+Type the following command in your terminal to clone this repository
+git clone https://github.com/thesmartcoder7/newsportal.git
 
-    (virtual)$exportDATABASE_URL='postgresqlpsycopg2://username:password@localhost/pitch'`<br/>
-    `(virtual)$ export SECRET_KEY='Your secret key'
-
-Run Database Migrations.
-
-    (virtual)$ python manage.py db init
-    (virtual)$ python manage.py db migrate -m "Initial migration"
-    (virtual)$ python manage.py db upgrade
-
-Run the app.
-
-    (virtual)$ touch start.sh
-
-    Put #!/usr/bin/env bash as the first line in start.sh
-    Put python3.8 manage.py server as the second line in start.sh
-
-    (virtual)$ chmod a+x start.sh
-    (virtual)$ ./start.sh
-
-
+# 
 ## Contributors
     - Joy Christine Nduta Kimani
+ 
 
 ### Contact Information
 joychristin2@gmail.com
