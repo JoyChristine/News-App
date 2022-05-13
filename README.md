@@ -1,7 +1,7 @@
 
 ## Description
 
-Pitch is a web application that will help users list and preview pitches in different categories.
+News App is a project that allows you to view different news sources & read articles
 
 
 
